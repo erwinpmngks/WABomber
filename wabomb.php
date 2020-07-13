@@ -6,7 +6,7 @@ function send($no){
   $ch = curl_init();
   curl_setopt($ch, CURLOPT_URL,"https://api.bioskoponline.com/auth/phone");
   curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, "phone=082190450269");
+  curl_setopt($ch, CURLOPT_POSTFIELDS, "phone=".$no);
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
   $server_output = curl_exec($ch);
   curl_close ($ch);

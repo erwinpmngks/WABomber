@@ -14,7 +14,7 @@ function send($no){
   return $server_output;
 }
 
-echo "Nomor (08xxx): ";
+echo "Nomor (087798055500): ";
 $no = trim(fgets(STDIN));
 echo "Jumlah: ";
 $jumlah = trim(fgets(STDIN));
